@@ -873,8 +873,11 @@ img {
 }
 
 /* ==========================================
-   Table Images
+   Banner Images
    ========================================== */
+.rank-card img,
+.service-card img,
+.detail-card img,
 table img {
   width: 100%;
   height: auto;
