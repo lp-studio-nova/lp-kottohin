@@ -842,15 +842,6 @@ img {
     overflow: hidden;
   }
 
-  /* 比較表内の画像 */
-  .comparison-table img,
-  .compare-table img,
-  section table img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
 
   /* 比較表の左端ラベル列 */
   .comparison-table td:first-child,
@@ -879,6 +870,15 @@ img {
   word-break: break-word;
   overflow-wrap: break-word;
   overflow: visible;
+}
+
+/* ==========================================
+   Table Images
+   ========================================== */
+table img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ==========================================
