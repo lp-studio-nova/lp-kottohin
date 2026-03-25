@@ -832,8 +832,46 @@ table img {
     text-overflow: ellipsis;
   }
 
-  .comparison-table .col-co {
-    width: 33.3%;
+  /* 比較表のテーブル全体 */
+  .comparison-table,
+  .compare-table,
+  section table {
+    table-layout: auto;
+    width: 100%;
+  }
+
+  /* 比較表の画像セル */
+  .comparison-table td,
+  .compare-table td,
+  section table td {
+    width: auto;
+    min-width: 0;
+    padding: 4px;
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  /* 比較表内の画像 */
+  .comparison-table img,
+  .compare-table img,
+  section table img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* 比較表の左端ラベル列 */
+  .comparison-table td:first-child,
+  section table td:first-child {
+    width: 22%;
+    font-size: 10px;
+  }
+
+  /* 比較表の各社列 */
+  .comparison-table td:not(:first-child),
+  section table td:not(:first-child) {
+    width: 26%;
   }
 }
 
