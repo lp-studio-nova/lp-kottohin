@@ -92,13 +92,14 @@ img {
    Section Titles
    ========================================== */
 .sec-title {
-  background: #1a1a1a;
+  background: #1a1a1a !important;
   color: #ffffff;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   padding: 14px 12px;
   line-height: 1.5;
+  margin: 0;
 }
 
 .sec-title .small {
@@ -145,6 +146,13 @@ img {
    ========================================== */
 .hero {
   background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-banner {
+  line-height: 0;
+  font-size: 0;
 }
 
 .hero-banner img {
@@ -276,19 +284,14 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: bold;
   width: 36px;
-  height: 36px;
-  border-radius: 50%;
   text-align: center;
   line-height: 1.2;
 }
 
-.rank-badge--1 { background: #CC0000; }
-.rank-badge--2 { background: #555555; }
-.rank-badge--3 { background: #777777; }
+.rank-badge--1, .rank-badge--2, .rank-badge--3 { background: none; }
 
 /* 中列：バナー画像 */
 .rank-card-mid {
@@ -793,6 +796,45 @@ img {
   font-weight: bold;
   margin-right: 6px;
   vertical-align: middle;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+/* ==========================================
+   Fix ⑤: 1位カード背景色
+   ========================================== */
+.rank-card--1 {
+  background: #FFF5F5;
+}
+
+/* ==========================================
+   Fix ④: スマホ CTA ボタン調整
+   ========================================== */
+@media (max-width: 768px) {
+  .btn-cta {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 10px 12px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* ==========================================
+   Fix ⑦: FAQ 回答エリア崩れ防止
+   ========================================== */
+.faq-item {
+  overflow: visible;
+}
+
+.faq-answer {
+  width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  overflow: visible;
 }
 
 /* ==========================================
