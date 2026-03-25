@@ -884,6 +884,9 @@ img {
 table img {
   width: 100%;
   height: auto;
+  max-height: 80px;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
