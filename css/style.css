@@ -565,8 +565,20 @@ img {
   background: #FFF5F5;
 }
 
+/* まねきや列：左右を全行赤枠 */
+.comparison-table .col-co--1 {
+  border-left: 2px solid #FF0000;
+  border-right: 2px solid #FF0000;
+}
+
+/* まねきや列：ヘッダーに上ボーダー追加 */
 .comparison-table thead .col-co--1 {
-  border: 2px solid #FF0000;
+  border-top: 2px solid #FF0000;
+}
+
+/* まねきや列：最終行に下ボーダー追加（枠を閉じる） */
+.comparison-table tbody tr:last-child .col-co--1 {
+  border-bottom: 2px solid #FF0000;
 }
 
 .comparison-table .stars {
