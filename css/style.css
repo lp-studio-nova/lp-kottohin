@@ -547,15 +547,6 @@ img {
   overflow: hidden;
 }
 
-.comparison-table img,
-.compare-table img,
-table img {
-  width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: contain;
-  display: block;
-}
 
 .comparison-table .col-label {
   width: 22%;
