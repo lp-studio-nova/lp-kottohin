@@ -542,8 +542,19 @@ img {
   border: 1px solid #DDDDDD;
   padding: 6px 4px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   word-break: break-all;
+  overflow: hidden;
+}
+
+.comparison-table img,
+.compare-table img,
+table img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: cover;
+  display: block;
 }
 
 .comparison-table .col-label {
@@ -819,6 +830,10 @@ img {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .comparison-table .col-co {
+    width: 33.3%;
   }
 }
 
