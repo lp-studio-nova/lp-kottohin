@@ -552,8 +552,8 @@ img {
 table img {
   width: 100%;
   height: auto;
-  max-height: 120px;
-  object-fit: cover;
+  max-height: none;
+  object-fit: contain;
   display: block;
 }
 
