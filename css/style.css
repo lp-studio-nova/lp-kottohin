@@ -291,7 +291,9 @@ img {
   line-height: 1.2;
 }
 
-.rank-badge--1, .rank-badge--2, .rank-badge--3 { background: none; }
+.rank-badge--1 { background: #FFD700; color: #FFFFFF; border-radius: 4px; padding: 2px 4px; }
+.rank-badge--2 { background: #C0C0C0; color: #FFFFFF; border-radius: 4px; padding: 2px 4px; }
+.rank-badge--3 { background: #CD7F32; color: #FFFFFF; border-radius: 4px; padding: 2px 4px; }
 
 /* 中列：バナー画像 */
 .rank-card-mid {
@@ -516,9 +518,9 @@ img {
   vertical-align: middle;
 }
 
-.rank-num--1 { background: #CC0000; }
-.rank-num--2 { background: #555555; }
-.rank-num--3 { background: #777777; }
+.rank-num--1 { background: #FFD700; color: #FFFFFF; }
+.rank-num--2 { background: #C0C0C0; color: #FFFFFF; }
+.rank-num--3 { background: #CD7F32; color: #FFFFFF; }
 
 .mt-12 { margin-top: 12px; }
 
@@ -596,9 +598,9 @@ img {
   text-align: center;
 }
 
-.comp-rank-badge--1 { background: #CC0000; }
-.comp-rank-badge--2 { background: #555555; }
-.comp-rank-badge--3 { background: #777777; }
+.comp-rank-badge--1 { background: #FFD700; color: #FFFFFF; }
+.comp-rank-badge--2 { background: #C0C0C0; color: #FFFFFF; }
+.comp-rank-badge--3 { background: #CD7F32; color: #FFFFFF; }
 
 .comp-name {
   font-size: 11px;
