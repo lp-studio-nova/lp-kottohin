@@ -1,5 +1,32 @@
 @charset "utf-8";
 
+/* ===================================
+   Cocoon（ウラオモテ）余白・幅制限の上書き
+   WordPress環境での表示崩れ対策
+   =================================== */
+.entry-content {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+.content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.main {
+  padding: 0 !important;
+}
+.wrap {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+#content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.article {
+  padding: 0 !important;
+}
+
 /* ==========================================
    Reset & Base
    ========================================== */
